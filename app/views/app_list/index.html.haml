@@ -1,0 +1,13 @@
+#menu
+#header.gradient-primary
+    .title== My Apps
+#body
+    #action
+        = link_to 'Create Project', '#'
+    #list
+        = render partial: 'project', collection: @projects
+    #new
+    #modal
+        .content
+            .name== Create new app
+            %input
